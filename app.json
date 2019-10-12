@@ -1,0 +1,37 @@
+
+{
+    "name": "safestudio-sotd",
+    "description": "Something of the day",
+    "scripts": {
+    },
+    "env": {
+        "APP_ENV": {
+            "required": true
+        },
+        "APP_KEY": {
+            "required": true
+        },
+        "APP_DEBUG": {
+            "required": true
+        },
+        "APP_URL": {
+            "required": true
+        },
+        "DB_CONNECTION": {
+            "required": true
+        }
+    },
+    "formation": {
+    },
+    "addons": [
+        {
+            "plan": "heroku-postgresql:hobby-dev",
+            "as": "DATABASE"
+        }
+    ],
+    "buildpacks": [
+        {
+            "url": "heroku/php"
+        }
+    ]
+}
